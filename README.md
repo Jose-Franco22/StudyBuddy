@@ -76,4 +76,18 @@ pip install -r requirements.txt
 # 4️⃣ Run the Flask app
 python app.py
 
+```
+
+### 🧰 Option 2 — Using Conda
+```bash
+# 1️⃣ Create the environment from YAML file
+conda env create -f environment.yml
+
+# 2️⃣ Activate the environment
+conda activate studybuddy
+
+# 3️⃣ Run the Flask app
+python app.py
+```
+
 
