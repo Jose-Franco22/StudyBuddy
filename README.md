@@ -57,3 +57,44 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
   "description": "Weekly study sessions for Physics 101",
   "members": ["Jose", "Teammate Name"]
 }
+
+```
+
+🚀 Getting Started
+🧱 Prerequisites
+
+Python 3.8+ installed
+
+Flask library installed
+
+(Optional) Conda installed, if you want to use a YAML environment
+
+⚙️ Option 1 — Using Python venv
+# Create virtual environment
+python -m venv venv
+
+# Activate
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the Flask app
+python app.py
+
+
+⚙️ Option 2 — Using Conda
+# Create environment from YAML
+conda env create -f environment.yml
+
+# Activate environment
+conda activate studybuddy
+
+# Run the Flask app
+python app.py
+
+
+
