@@ -69,32 +69,21 @@ Flask library installed
 
 (Optional) Conda installed, if you want to use a YAML environment
 
-⚙️ Option 1 — Using Python venv
-# Create virtual environment
+# 1️⃣ Create virtual environment
 python -m venv venv
 
-# Activate
+# 2️⃣ Activate the environment
 # On macOS/Linux:
 source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
 
-# Install dependencies
+# 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-# Run the Flask app
+# 4️⃣ Run the Flask app
 python app.py
 
-
-⚙️ Option 2 — Using Conda
-# Create environment from YAML
-conda env create -f environment.yml
-
-# Activate environment
-conda activate studybuddy
-
-# Run the Flask app
-python app.py
 
 
 
