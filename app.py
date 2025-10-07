@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_sqlalchemy import SQLAlchemy
 
 # Initialize Flask app
@@ -7,6 +7,7 @@ app = Flask(__name__)
 # Configure SQLite database
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'your-secret-key-here' 
 
 # Initialize database
 db = SQLAlchemy(app)
@@ -72,28 +73,48 @@ def delete_group(id):
 # Join group route
 @app.route('/join/<int:id>', methods=['POST'])
 def join_group(id):
-    username = request.form.get('username', 'Anonymous')  # Simulated user
+    username = request.form.get('username', '').strip()
     group = StudyGroup.query.get_or_404(id)
 
+    # Validate username
+    if not username:
+        flash('Please enter a valid name!', 'danger')
+        return redirect(url_for('index'))
+
     members = group.get_members()
-    if username not in members:
+    
+    # Check if already a member
+    if username in members:
+        flash(f'{username} is already a member of "{group.group_name}"!', 'warning')
+    else:
         members.append(username)
         group.members = ', '.join(members)
         db.session.commit()
+        flash(f'{username} successfully joined "{group.group_name}"!', 'success')
 
     return redirect(url_for('index'))
 
 # Leave group route
 @app.route('/leave/<int:id>', methods=['POST'])
 def leave_group(id):
-    username = request.form.get('username', 'Anonymous')
+    username = request.form.get('username', '').strip()
     group = StudyGroup.query.get_or_404(id)
 
+    # Validate username
+    if not username:
+        flash('Please enter a valid name!', 'danger')
+        return redirect(url_for('index'))
+
     members = group.get_members()
-    if username in members:
+    
+    # Check if user is a member
+    if username not in members:
+        flash(f'{username} is not a member of "{group.group_name}"!', 'danger')
+    else:
         members.remove(username)
         group.members = ', '.join(members)
         db.session.commit()
+        flash(f'{username} has left "{group.group_name}".', 'info')
 
     return redirect(url_for('index'))
 
