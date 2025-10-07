@@ -63,14 +63,16 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 python -m venv venv
 
 ### 2️⃣ Activate the environment
-# On macOS/Linux:
+
+## On macOS/Linux:
 source venv/bin/activate
-# On Windows:
+
+## On Windows:
 venv\Scripts\activate
 
-# 3️⃣ Install dependencies
+### 3️⃣ Install dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Run the Flask app
+### 4️⃣ Run the Flask app
 python app.py
 
