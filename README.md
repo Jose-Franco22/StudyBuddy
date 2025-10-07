@@ -58,11 +58,11 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
   "members": ["Jose", "Teammate Name"]
 }
 ```
-## Option 1 — Using Python venv
-# 1️⃣ Create virtual environment
+# Option 1 — Using Python venv
+### 1️⃣ Create virtual environment
 python -m venv venv
 
-# 2️⃣ Activate the environment
+### 2️⃣ Activate the environment
 # On macOS/Linux:
 source venv/bin/activate
 # On Windows:
