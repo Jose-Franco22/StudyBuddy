@@ -57,3 +57,20 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
   "description": "Weekly study sessions for Physics 101",
   "members": ["Jose", "Teammate Name"]
 }
+```
+## Option 1 — Using Python venv
+# 1️⃣ Create virtual environment
+python -m venv venv
+
+# 2️⃣ Activate the environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+
+# 3️⃣ Install dependencies
+pip install -r requirements.txt
+
+# 4️⃣ Run the Flask app
+python app.py
+
