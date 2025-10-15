@@ -62,32 +62,32 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 
 ### Option 1 — Using Python venv
 ```bash
-# 1️⃣ Create virtual environment
+# 1️ Create virtual environment
 python -m venv venv
 
-# 2️⃣ Activate the environment
+# 2️ Activate the environment
 # On macOS/Linux:
 source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
 
-# 3️⃣ Install dependencies
+# 3️ Install dependencies
 pip install -r requirements.txt
 
-# 4️⃣ Run the Flask app
+# 4️ Run the Flask app
 python app.py
 
 ```
 
 ### Option 2 — Using Conda
 ```bash
-# 1️⃣ Create the environment from YAML file
+# 1 Create the environment from YAML file
 conda env create -n studybuddy -f environment.yml
 
-# 2️⃣ Activate the environment
+# 2️ Activate the environment
 conda activate studybuddy
 
-# 3️⃣ Run the Flask app
+# 3️ Run the Flask app
 python app.py
 ```
 
