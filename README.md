@@ -21,7 +21,7 @@ It allows users to add study groups, view existing ones, edit their details, and
 | **Create Group** | Add a new study group with name, subject, and description. | Create |
 | **Edit Group** | Modify details of an existing study group. | Update |
 | **Delete Group** | Remove a study group from the database. | Delete |
-| **Join Group ** | Add yourself as a member of a study group. | Update |
+| **Join Group** | Add yourself as a member of a study group. | Update |
 
 ---
 
