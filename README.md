@@ -2,17 +2,13 @@
 
 ## Project Description
 **StudyBuddy** is a lightweight web application that helps students create, join, and manage study groups for their classes.  
-The app follows the **CRUD** model (Create, Read, Update, Delete) and is built primarily with **Python (Flask)**.  
-It allows users to add study groups, view existing ones, edit their details, and delete them when no longer needed.  
 
-This project demonstrates the **Software Development Life Cycle (SDLC)** and applies **Agile** methodology in a small, two-person development team.
+It allows users to add study groups, view existing ones, edit their details, and delete them when no longer needed.  
 
 ---
 
-## Objectives
-- Apply the full SDLC (requirements, design, implementation, testing, and documentation).  
-- Use **Python** for backend development and database management.  
-- Build a small but complete full-stack app with Flask and SQLite.  
+## Objectives 
+- Build a complete full-stack app.  
 - Follow Agile methodology with short sprints and version control through GitHub.  
 - Emphasize clean, simple, and modular code.
 
@@ -25,7 +21,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 | **Create Group** | Add a new study group with name, subject, and description. | Create |
 | **Edit Group** | Modify details of an existing study group. | Update |
 | **Delete Group** | Remove a study group from the database. | Delete |
-| **Join Group (Optional)** | Add yourself as a member of a study group. | Update |
+| **Join Group ** | Add yourself as a member of a study group. | Update |
 
 ---
 
@@ -36,7 +32,6 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 | **Backend** | Python (Flask) |
 | **Database** | SQLite (simple, file-based) |
 | **Version Control** | Git + GitHub |
-| **Development Methodology** | Agile (Scrum-based teamwork) |
 
 ---
 
@@ -47,7 +42,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 | `group_name` | Text | Name of the study group |
 | `subject` | Text | Subject or course name |
 | `description` | Text | Short summary of the group |
-| `members` | Text (optional JSON string) | List of group members |
+| `members` | Text | List of group members |
 
 ### Example
 ```json
