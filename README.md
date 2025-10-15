@@ -1,6 +1,6 @@
-# 📚 StudyBuddy — Study Group Finder (Python Version)
+# StudyBuddy — Study Group Finder
 
-## 🧩 Project Description
+## Project Description
 **StudyBuddy** is a lightweight web application that helps students create, join, and manage study groups for their classes.  
 The app follows the **CRUD** model (Create, Read, Update, Delete) and is built primarily with **Python (Flask)**.  
 It allows users to add study groups, view existing ones, edit their details, and delete them when no longer needed.  
@@ -9,7 +9,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Apply the full SDLC (requirements, design, implementation, testing, and documentation).  
 - Use **Python** for backend development and database management.  
 - Build a small but complete full-stack app with Flask and SQLite.  
@@ -18,7 +18,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 
 ---
 
-## 💡 Core Features
+## Core Features
 | Feature | Description | CRUD |
 |----------|--------------|------|
 | **View Groups** | Display all study groups stored in the database. | Read |
@@ -29,7 +29,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 | Layer | Technology |
 |-------|-------------|
 | **Frontend** | HTML, CSS, Bootstrap (optional), basic JavaScript |
@@ -40,7 +40,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 
 ---
 
-## 🧠 Example Data Model
+## Example Data Model
 | Column | Type | Description |
 |---------|------|-------------|
 | `id` | Integer (Primary Key) | Unique group ID |
@@ -60,7 +60,7 @@ This project demonstrates the **Software Development Life Cycle (SDLC)** and app
 
 ```
 
-### 🧰 Option 1 — Using Python venv
+### Option 1 — Using Python venv
 ```bash
 # 1️⃣ Create virtual environment
 python -m venv venv
@@ -79,7 +79,7 @@ python app.py
 
 ```
 
-### 🧰 Option 2 — Using Conda
+### Option 2 — Using Conda
 ```bash
 # 1️⃣ Create the environment from YAML file
 conda env create -n studybuddy -f environment.yml
